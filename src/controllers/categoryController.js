@@ -1,6 +1,6 @@
 'Use strict';
 
-var items =[
+var categories =[
     {'id': 1, 'name':'films'},
     {'id': 2, 'name':'musiques' }
 ];

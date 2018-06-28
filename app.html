@@ -5,16 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Angularjs Training</title>
+
+        <!--angular.js/angularModules-->
         <script type="text/javascript" src="bower_components/angular/angular.js"></script>
         <script type="text/javascript" src="app.js"></script>
 
-        <!--categoryController-->
-        <script type="text/javascript" src="src/controllers/categoryController.js"></script>
+        <!--Controllers-->
+        <script type="text/javascript" src="src/controllers/categoryController.js"></script>        
+        <script type="text/javascript" src="src/controllers/itemController.js"></script>
+        
+        <!--Directives-->        
+        <script type="text/javascript" src="src/directives/itemDecoratorDirective.js"></script>
+        
+        <!--Servivces-->
+        <script type="text/javascript" src="src/services/itemProvider.js"></script>
     </head>
 
     <body ng-app="collectify">
-        <div ng-controller="categoryCreate">
-            {{test}}
+        <div ng-controller="itemList">
+            <div ng-repeat="item in items">
+                <p decorate-item></p>
+            </div>
         </div>
     </body>
 </html>
