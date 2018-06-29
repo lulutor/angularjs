@@ -7,6 +7,7 @@ var categories =[
 
 
 app
+
     .controller('categoryIndex', function ($scope) {
 
     })
